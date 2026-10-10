@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "interactive-billiards-physics-simulation"
+version = "1.0.0"
+description = "A Tkinter-based 2D billiards physics simulation built as a university course project."
+requires-python = ">=3.10"
+authors = [{name = "Yanwei Zhang"}]
+
+[project.scripts]
+billiards-sim = "billiards_sim.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
